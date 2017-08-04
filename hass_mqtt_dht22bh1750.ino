@@ -138,9 +138,6 @@ void loop() {
     digitalWrite(BUILTIN_LED, LOW);
   }
 
-  
-  client.loop();
-
   long now = millis();
   if (now - lastMsg > 5000) {
     lastMsg = now;
